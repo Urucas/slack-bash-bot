@@ -2,7 +2,7 @@
 Bot for Slack made in Bash to check mysql, apache service halt
 
 #Before run
-Create a simple *.ini* with these 3 params
+Create a simple *bot.ini* with these 3 params
 ```
 token=slack-bot-token
 channel=slack-channel
