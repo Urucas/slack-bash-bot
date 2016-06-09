@@ -8,7 +8,7 @@ function push {
   echo $RESPONSE  
 }
 
-MYSQL_STATUS=$(service mysql status | grep "running"; echo $?)
+MYSQL_STATUS=$(service mysql status | grep "stop"; echo $?)
 if [ "$MYSQL_STATUS" -eq "1" ]; then
   push "WOOOT! MySQL service has stopped, quickly connect that service up again! ...or move to mongo, what ever you want."
 fi;
