@@ -10,12 +10,12 @@ function push {
 
 MYSQL_STATUS=$(service mysql status)
 if [ MYSQL_STATUS grep -q "stop" ]; then
-  push "WOOOT! MySQL service has stopped, quickly connect that service up again!"
+  push "WOOOT! MySQL service has stopped, quickly connect that service up again! ...or move to mongo, what ever you want."
 fi;
 
 APACHE_STATUS=$(service apache2 status)
 if [ APACHE_STATUS grep -q "apache2 is not running" ]; then
-  push "WOOOT! Apache2 is not running, your pages are down(not special) unreachebles!"
+  push "WOOOT! Apache2 is not running, your pages are unreachebles! Ohhh, won't somebody please think of the children."
 fi;
 
 exit 0
