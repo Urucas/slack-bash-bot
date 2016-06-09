@@ -8,12 +8,12 @@ function push {
   echo $RESPONSE  
 }
 
-MYSQL_STATUS=$(service mysql status | grep "stop"; echo $?)
+MYSQL_STATUS=$(service mysql status | grep "running" > /dev/null; echo $?)
 if [ "$MYSQL_STATUS" -eq "1" ]; then
   push "WOOOT! MySQL service has stopped, quickly connect that service up again! ...or move to mongo, what ever you want."
 fi;
 
-APACHE_STATUS=$(service apache2 status | grep "is running"; echo $?)
+APACHE_STATUS=$(service apache2 status | grep "is running" > /dev/null; echo $?)
 if [ "$APACHE_STATUS" -eq "1" ]; then
   push "WOOOT! Apache2 is not running, your pages are unreachebles! Ohhh, won't somebody please think of the children."
 fi;
