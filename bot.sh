@@ -14,7 +14,7 @@ if [ -z MYSQL_STATUS ]; then
 fi;
 
 APACHE_STATUS=$(service apache2 status | grep "is running")
-if [ -z APACHE_STATUS grep ]; then
+if [ -z APACHE_STATUS ]; then
   push "WOOOT! Apache2 is not running, your pages are unreachebles! Ohhh, won't somebody please think of the children."
 fi;
 
