@@ -14,3 +14,5 @@ username=slack-bot-username
 /absolute/path/2/bot.sh /absolute/path/2/da/bot.ini
 ```
 We actually add this to our crontab
+
+<img src="https://raw.githubusercontent.com/Urucas/slack-bash-bot/master/screen.png" />
