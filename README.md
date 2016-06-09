@@ -11,6 +11,6 @@ username=slack-bot-username
 
 #Run 
 ```bash
-./bash /path/to/da/bot.ini
+/absolute/path/2/bot.sh /absolute/path/2/da/bot.ini
 ```
 We actually add this to our crontab
